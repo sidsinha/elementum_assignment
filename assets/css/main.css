@@ -1,0 +1,235 @@
+
+body{
+/* Setting default text color, background and a font stack */
+    font-size: 0.875em;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica';
+    color: #484949;
+    line-height: 18px;
+    text-align: left;
+    margin: 0px auto;
+    
+}
+article, aside, footer, header, hgroup, main, nav, section {
+display: block;
+}
+h1{
+    font-size: 1.500em;
+    font-family: 'Helvetica';
+    color: #1a9dba;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px auto;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 0.875em;
+    font-family: 'Helvetica';
+    color: #484949;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px auto;
+    text-transform: uppercase;
+}
+p{
+    font-size: 0.875em;
+    font-family: 'Helvetica';
+    color: #484949;
+    font-weight: normal;
+    margin: 0px auto;
+}
+a{
+    text-decoration: none;
+    color: #1a9dba;
+  
+}
+a:hover{
+    text-decoration: none;
+    color: #1a9dba;
+}
+
+header{
+    height: 80px;
+    margin: 0;
+   
+    background: url('../images/header.png');
+}
+#container{
+    width: 100%;
+}
+
+#left_box{
+    width: 33%;
+    height: auto;
+    float: left;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: inset -5px 0px 6px 0px rgba(48, 50, 50, 0.42);
+    -moz-box-shadow:    inset -5px 0px 6px 0px rgba(48, 50, 50, 0.42);
+    box-shadow:         inset -5px 0px 6px 0px rgba(48, 50, 50, 0.42);
+}
+
+#left_box h1{
+    padding: 10% 0% 2% 10%;
+    
+}
+
+#left_box .border{
+    background-color: #dadada;
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#browse_movies td{
+    max-width: 160px;
+    height: 150px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    margin: 5% 8% 5% 8%; 
+}
+
+#browse_movies td img{
+    height: 122px;
+    width: 122px;
+    border: 9px solid #f7f7f7;
+    
+}
+#browse_movies td img:hover{
+    height: 122px;
+    width: 122px;
+    border: 9px solid #1a9dba;
+}
+#browse_movies td h2{
+    text-align: center;
+}
+#browse_movies td h2:hover{
+    text-align: center;
+    color: #1b9ebc;
+}
+#browse_movies td p:hover{
+    text-align: center;
+    color: #1b9ebc;
+}
+#right_box{
+    width: 66%;
+    float: right;
+    background-color: #fff;
+    
+}
+
+#right_box h1{
+    padding: 3% 0% 1% 3%;
+   
+}
+
+#right_box .border{
+    background-color: #d0cfcf;
+    height: 1px;
+    width: 80%;
+    margin-left: 3%;
+}
+footer{
+    border-top: 2px solid #1b9ebc;
+    height: 80px;
+    width: 100%;
+    
+}
+.profile-img {
+    width: 66px;
+    height: 66px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.mvimg{
+	width: 172px;
+	height: 262px;
+	margin: 2% 2% 2% 3%;
+	float: left;
+}
+
+.mvdetails{
+	width: 60%;
+	margin: 2% 2% 2% 3%;
+	float: left;
+}
+
+.mvdesc{
+	padding-top: 4%;
+}
+#credit-img td{
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin: 5% 8% 5% 8%;
+    display: inherit;
+}
+
+#big_poster img {
+    width: 347px;
+    height: 420px;
+    float: left;
+    display: inline-block;
+    margin: -32% 8% 5% 38%;
+}
+#credit-img td img{
+    height: 66px;
+    width: 66px;
+    margin: 0% 5% 0% 10%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    border: 5px solid #ffffff;  
+}
+#credit-img td img:hover{
+    height: 66px;
+    width: 66px;
+    margin: 0% 5% 0% 10%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    border: 5px solid #1a9dba;
+}
+#credit-img td h2{
+    width: 136px;
+    float: left;
+    text-align: left;
+    margin-top: 6%;
+}
+#credit-img td h2:hover{
+    width: 136px;
+    float: left; 
+    color: #1b9ebc;
+    text-align: left;
+}
+#credit-img td p{
+    width: 136px;
+    float: left;
+    text-align: left;
+}
+#credit-img td p:hover{
+    width: 136px;
+    float: left;
+    text-align: left;
+    color: #1b9ebc;
+}
+footer{
+    height: 100px;
+    
+}
+.creditlist{
+	float: left;
+    height: 418px;
+    overflow: scroll;
+}
+.list-comma::before {
+ content: ', ';
+}
+.list-comma:first-child::before {
+ content: '';
+}

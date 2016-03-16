@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="mainModule">
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Assignment</title>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<!-- SPELLS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+<script src="app/app.module.js"></script><!-- load main controller -->
+<body ng-controller="mainController">
+<header> </header>
+<div id="container">
+  <aside id="left_box">
+    <h1>BROWSE MOVIES</h1>
+    <div class="border"></div>
+    <div>
+      <table id="browse_movies">
+        <tr>
+          <td ng-repeat="movie in movieCollection">
+          	<a href="javascript:void(0);" ng-click="changeView(movie.id)">
+          <img class="profile-img" src="{{CustomImgLink}}{{movie.poster_path}}"></a>
+            <h2>{{movie.title}}</h2>
+            <!--<p>asdasdasdasdadsad</p>-->
+            </a></td>
+        </tr>
+      </table>
+    </div>
+  </aside>
+  <div ng-include="template"></div>
+</div>
+<footer> </footer>
+</body>
+</html>
