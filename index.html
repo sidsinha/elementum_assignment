@@ -10,7 +10,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
 <script src="app/app.module.js"></script><!-- load main controller -->
-<body ng-controller="mainController">
+<script src="app/services/config.js"></script><!-- load config controller -->
+<script src="app/services/movie-collection.js"></script><!-- load movie collection controller -->
+<script src="app/services/movie-details.js"></script><!-- load movie details controller -->
+
+<body ng-controller="mainController" data-ng-init="changeView(218)">
 <header> </header>
 <div id="container">
   <aside id="left_box">
@@ -20,9 +24,9 @@
       <table id="browse_movies">
         <tr>
           <td ng-repeat="movie in movieCollection">
-          	<a href="javascript:void(0);" ng-click="changeView(movie.id)">
-          <img class="profile-img" src="{{CustomImgLink}}{{movie.poster_path}}"></a>
-            <h2>{{movie.title}}</h2>
+          	<a href="javascript:void(0);" ng-click="changeView(movie.id)" class="movielist">
+          <img class="profile-img" src="{{CustomImgLink}}{{movie.poster_path}}">
+            <h2>{{movie.title}}</h2></a>
             <!--<p>asdasdasdasdadsad</p>-->
             </a></td>
         </tr>

@@ -14,7 +14,7 @@ app.controller('mainController',
 			
 			//getting movie collection by calling 'MovieCollectionService' service (i.e., app/services/movie-collection.js)
 			$scope.movieCollection = MovieCollectionService.getAPIMovieCollection();
-			
+			$scope.changeView(218);// calling funtion on pageload to show default movie
 						
 			//function called for getting movie information, after click on movie poster
             $scope.changeView = function(id) {
